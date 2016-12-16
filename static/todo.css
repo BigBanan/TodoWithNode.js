@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    outline: 0;
+}
+
+html, body, .todo {
+    background:#fff;
+    height: 100%;
+}
+
+.todo {
+    display: flex;
+}
+
+.index {
+    /*display: inline-block;*/
+    flex-grow: 1;
+    width: 90px;
+    height: 100%;
+    background: #353d40;
+}
+
+.logo {
+    text-align: center;
+    margin: 20px 0px;
+
+ }
+
+.logo > img {
+    border-radius: 15px;
+    width: 50px;
+}
+
+.task {
+    text-align: center;
+    background: #2c3032;
+    color: #00bff3;
+    height: 50px;
+    line-height: 50px;
+}
+
+.task > i {
+    margin: 0px 10px;
+}
+
+.contains {
+    flex-grow: 100;
+    height: 100%;
+}
+
+.info {
+    border-bottom: 1px solid #e5e5e5;
+    height: 45px;
+    line-height: 45px;
+    color: #404040;
+    font-size: 20px;
+}
+
+.date {
+    margin: 0px 20px;
+}
+
+.date-cont {
+    margin: 0px 20px;
+    margin-top: 5px;
+    font-size: xx-large;
+    color: #b7bfc1;
+}
+
+.date-cont:hover {
+    text-shadow: 0px 0px 9px gray;
+}
+
+.date-add {
+    float: right;
+    line-height: 45px;
+    margin-right: 40px;
+    color: #00bff3;
+}
+
+.contains {
+    color:#999999;
+    position: relative;
+}
+
+.todo-task {
+    position: relative;
+}
+
+.add-task {
+    border-bottom: 1px solid #e5e5e5;
+    line-height: 50px;
+    font-size: x-large;
+}
+
+.add-task > span {
+    display: inline-block;
+}
+
+.add-task > span > i {
+    margin-left: 50px;
+    margin-right: 10px;
+}
+
+.add-task > span:hover {
+    text-shadow: 0px 0px 2px lightgray;
+}
+
+.add-task > form {
+    display: inline-block;
+}
+
+#id-input-add {
+    display: inline-block;
+    border: 1px solid gray;
+    height: 28px;
+    width: 183px;
+    position: relative;
+    top: -4px;
+    margin-left: 20px;
+    box-shadow: 0px 0px 5px gray;
+}
+
+#id-input-submit {
+    display: none;
+}
+
+line {
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background: #e5e5e5;
+    left: 60px;
+    z-index: 0;
+}
+
+.todo-task > time {
+    display: block;
+    margin-left: 54px;
+    margin-bottom: 10px;
+}
+
+.todo-task > time > i {
+    margin-right: 10px;
+    position: relative;
+    z-index: 50;
+}
+
+ .todo-cell {
+     margin-left: 9px;
+     /*height: 52px;*/
+     line-height: 52px;
+     color: black;
+ }
+
+.todo-cell-finish {
+    text-decoration: line-through;
+    color: gray
+}
+
+.todo-cell > time {
+    color: #999999;
+}
+
+.todo-cell > i {
+     font-size: 30px;
+     margin-right: 10px;
+     position: relative;
+     top: 5px;
+     z-index: 50;
+     color: #ef662f;
+     background: white;
+ }
+
+i.fa-check-circle-o {
+    color: #b3afaf;
+}

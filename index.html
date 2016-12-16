@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>TODO</title>
+        <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+        <link rel="stylesheet" href="todo.css" media="screen" title="no title">
+        <script src="jquery-3.1.1.js"></script>
+        <script src="AjaxApi.js"></script>
+        <script src="insertTodo.js"></script>
+        <script>
+            $('document').ready(function(){
+                __main()
+            })
+        </script>
+    </head>
+    <body>
+        <div class="todo">
+            <div class="index">
+                <div class="logo">
+                    <img src="image/bananas.jpg" alt="logo" />
+                </div>
+                <div class="task">
+                    <i class="fa fa-tasks"></i>任务
+                </div>
+            </div>
+            <div class="contains">
+                <div class="info">
+                    <time class="date">2016-11-09</time>
+                    <i class="date-cont fa fa-angle-left"></i>
+                    <i class="date-cont fa fa-angle-right"></i>
+                    <i class="date-add fa fa-plus"></i>
+                </div>
+                <div class="todo-task">
+                    <div class="add-task">
+                        <span id=id-newTodo>
+                            <i class="fa fa-plus-circle"></i>
+                            新建任务
+                        </span>
+                        <form>
+                            <input id=id-input-add type="text" name="name" placeholder="按Enter完成输入" required>
+                            <input id=id-input-submit type="submit">
+                        </form>
+                    </div>
+                    <line></line>
+                    <time>
+                        <i class="fa fa-circle"></i>
+                        2016-11-09 星期三
+                    </time>
+                    <div class="todo-cells">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
